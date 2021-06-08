@@ -11,9 +11,12 @@ In this work, several features are added to the default [PX4](https://github.com
 -Keyborad control support <br />
 The work has been verified on Ubuntu 18.04 + ROS melodic environment <br />
 We strongly recommend to you to run this simulation with CUDA supported graphic card!
-### Demo Video
+
+### Simulation environment
 
 <img src="others/world.png" width="600">
+
+### Demo Video
 
 <a href="https://www.youtube.com/watch?v=sKkA5f62P6g" target="_blank"><img src="https://img.youtube.com/vi/sKkA5f62P6g/0.jpg" 
 alt="cla" width="400" border="0" /></a>
