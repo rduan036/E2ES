@@ -13,12 +13,13 @@ The work has been verified on Ubuntu 18.04 + ROS melodic environment <br />
 We strongly recommend to you to run this simulation with CUDA supported graphic card!
 ### Demo Video
 
+<img src="others/world.png" width="600">
+
 <a href="https://www.youtube.com/watch?v=sKkA5f62P6g" target="_blank"><img src="https://img.youtube.com/vi/sKkA5f62P6g/0.jpg" 
 alt="cla" width="400" border="0" /></a>
 
 | manual control    | Click and fly navigation   |
 | ---------------------- | ---------------------- |
-<img src="others/world.png" width="600">
 | <img src="others/kbctr.png" width="300">  | <img src="others/sim.png" width="300">  |
 
 ### Usage
@@ -107,5 +108,4 @@ This work are based on [PX4 Projcet](https://github.com/PX4/Firmware) and [reals
 
 ### Maintainer
 [Shengyang Chen](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/people/researchstudent.html)(Dept.ME,PolyU): shengyang.chen@connect.polyu.hk <br />
-Han Chen(Dept.AAE,PolyU):stark.chen@connect.polyu.
-Ran Duan(Dept.AAE,PolyU):rduan036@gmail.com.
+Han Chen(Dept.AAE,PolyU):stark.chen@connect.polyu and Ran Duan(Dept.AAE,PolyU):rduan036@gmail.com.
