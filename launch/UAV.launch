@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="x" default="0"/>
+    <arg name="y" default="0"/>
+    <arg name="z" default="0.2"/>
+    <arg name="R" default="0"/>
+    <arg name="P" default="0"/>
+    <arg name="Y" default="0"/>
+
+    <!-- vehicle model and world -->
+    <arg name="vehicle" default="iris"/>
+    <arg name="my_vehicle" default="iris_d435"/>
+    <arg name="sdf" default="$(find e2es)/gazebo/factory/models/$(arg my_vehicle)/model.sdf"/>
+
+    <!-- gazebo model -->
+    <node name="$(anon vehicle_spawn)" pkg="gazebo_ros" type="spawn_model" output="screen" args="-sdf -file $(arg sdf) -model $(arg vehicle) -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)"/>
+
+    <include file="$(find e2es)/launch/rviz.launch" />
+
+</launch>
