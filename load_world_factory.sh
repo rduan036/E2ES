@@ -7,15 +7,15 @@ source ~/catkin_ws/devel/setup.bash    # (optional)
 source Tools/setup_gazebo.bash $(pwd) $(pwd)/build/px4_sitl_default
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$(pwd)/Tools/sitl_gazebo
-export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:~/catkin_ws/src/E2ES/gazebo/square_room
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/catkin_ws/src/E2ES/gazebo/square_room/models/
+export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:~/catkin_ws/src/E2ES/gazebo/factory
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/catkin_ws/src/E2ES/gazebo/factory/models/
 # export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/catkin_ws/src/E2ES/gazebo/models
 export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:~/catkin_ws/devel/lib
 echo $GAZEBO_RESOURCE_PATH
 echo $GAZEBO_MODEL_PATH
 echo $GAZEBO_PLUGIN_PATH
 
-roslaunch e2es iris_d435_indoor.launch pause:=false
+roslaunch e2es factory.launch pause:=false
 
 
 

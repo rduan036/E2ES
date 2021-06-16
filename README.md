@@ -14,7 +14,9 @@ We strongly recommend to you to run this simulation with CUDA supported graphic 
 
 ### Simulation environment
 
-<img src="others/world.png" width="600">
+<img src="others/square_room.png" width="600">
+<img src="others/factory.png" width="600">
+<img src="others/factory_sim.png" width="600">
 
 ### Demo Video
 
@@ -78,7 +80,7 @@ cd ~/catkin_ws/
 catkin_make
 ````
 By default **ROS_WORK_SPACE_PATH** is ~/catkin_ws and **PX4_Firmware_PATH** is ~/PX4-Autopilot <br />
-If Not, Edit the path in E2ES/sim.sh script(Line 1 to 4)
+If Not, Edit the path in E2ES/load_world_YOUR_MAP.sh script(Line 1 to 4)
 ````
 export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:~/catkin_ws/src/e2es/gazebo/YOUR_MAP
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/catkin_ws/src/e2es/gazebo/YOUR_MAP/models
@@ -95,7 +97,7 @@ cd PX4_Firmware_PATH
 Run the simulator
 ````
 roscd e2es
-./load_world.sh
+./load_world_XXXX.sh
 ````
 Using keyboard to control the MAV in simulator
 ````
