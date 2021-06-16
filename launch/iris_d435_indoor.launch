@@ -3,7 +3,7 @@
     <!-- PX4 SITL and Gazebo -->
     <arg name="x" default="0"/>
     <arg name="y" default="0"/>
-    <arg name="z" default="0"/>
+    <arg name="z" default="0.2"/>
     <arg name="R" default="0"/>
     <arg name="P" default="0"/>
     <arg name="Y" default="0"/>
@@ -12,8 +12,9 @@
     <arg name="est" default="ekf2"/>
     <arg name="vehicle" default="iris"/>
     <arg name="my_vehicle" default="iris_d435"/>
-    <arg name="world" default="$(find e2es)/gazebo/square_room/indoor20x20.world"/>
-    <arg name="sdf" default="$(find e2es)/gazebo/square_room/models/$(arg my_vehicle)/model.sdf"/>
+    <arg name="world" default="$(find e2es)/gazebo/factory/factory.world"/>
+    <!--arg name="world" default="$(find e2es)/gazebo/square_room/indoor20x20.world"/-->
+    <arg name="sdf" default="$(find e2es)/gazebo/factory/models/$(arg my_vehicle)/model.sdf"/>
 
     <env name="PX4_SIM_MODEL" value="$(arg vehicle)" />
     <env name="PX4_ESTIMATOR" value="$(arg est)" />
@@ -41,12 +42,13 @@
         <arg name="paused" value="$(arg paused)"/>
         <arg name="respawn_gazebo" value="$(arg respawn_gazebo)"/>
     </include>
+
     <!-- gazebo model -->
-    <!--<node name="$(anon vehicle_spawn)" pkg="gazebo_ros" type="spawn_model" output="screen" args="-sdf -file $(arg sdf) -model $(arg vehicle) -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)"/>-->
+    <node name="$(anon vehicle_spawn)" pkg="gazebo_ros" type="spawn_model" launch-prefix="bash -c 'sleep 1; $0 $@' " output="screen" args="-sdf -file $(arg sdf) -model $(arg vehicle) -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)"/>
 
 
     <!-- MAVROS -->
-    <arg name="fcu_url" default="udp://:14540@localhost:14557"/>
+    <arg name="fcu_url" default="udp://:14540@127.0.0.1:14557"/>
     <arg name="respawn_mavros" default="false"/>
     <include file="$(find e2es)/launch/px4.launch">
         <!-- GCS link is provided by SITL -->
