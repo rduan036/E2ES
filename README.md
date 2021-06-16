@@ -14,9 +14,12 @@ We strongly recommend to you to run this simulation with CUDA supported graphic 
 
 ### Simulation environment
 
-square_room:
+square_room: <br />
+
 <img src="others/square_room.png" width="600">
-factory:
+
+factory: <br />
+
 <img src="others/factory.jpg" width="600">
 <img src="others/factory_sim.png" width="600">
 
