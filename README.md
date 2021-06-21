@@ -110,11 +110,18 @@ roslaunch e2es UAV.launch
 roslaunch e2es keyboard_ctr.launch
 ````
 
-You can use the 2D-Nav-Goal in RVIZ to publish your destination. <br />
+You can also use the 2D-Nav-Goal in RVIZ to publish your destination. <br />
+
+# Testing your algorithms
+
+Example: 
+
+VO (https://github.com/arclab-hku/SOPVO) + tracking (https://github.com/arclab-hku/ICRA2021tracking): 
+
+![example](others/vo_tracking_demo.gif)
 
 ### Acknowledgement
 This work are based on [PX4 Projcet](https://github.com/PX4/Firmware) and [realsense_gazebo_plugin](https://github.com/pal-robotics/realsense_gazebo_plugin)
-
 
 ### Maintainer
 [Shengyang Chen](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/people/researchstudent.html)(Dept.ME,PolyU): shengyang.chen@connect.polyu.hk <br />
