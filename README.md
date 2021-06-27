@@ -14,16 +14,17 @@ We strongly recommend to you to run this simulation with CUDA supported graphic 
 
 ### Simulation environment
 
-<img src="others/world.png" width="600">
+square_room: <br />
 
-### Demo Video
+<img src="others/square_room.png" width="600">
 
-<a href="https://www.youtube.com/watch?v=sKkA5f62P6g" target="_blank"><img src="https://img.youtube.com/vi/sKkA5f62P6g/0.jpg" 
-alt="cla" width="400" border="0" /></a>
+factory: <br />
 
-| manual control    | Click and fly navigation   |
-| ---------------------- | ---------------------- |
-| <img src="others/kbctr.png" width="300">  | <img src="others/sim.png" width="300">  |
+<img src="others/factory_sim.png" width="600">
+
+# manual control
+q: rotate left   |   w: forward    |  e: rotate right   |  r: up <br />
+a: left          |   s: backward   |  d: right          |  f: down <br />
 
 ### Usage
 Install pre-requires:
@@ -69,7 +70,7 @@ git clone https://github.com/HKPolyU-UAV/E2ES.git
 ````
 Install 3rd Part Library
 ````
-cd ~/catkin_ws/src/e2es/3rdPartLib
+cd ~/catkin_ws/src/E2ES/3rdPartLib
 sudo ./install3rdPartLib.sh
 ````
 Compile
@@ -78,7 +79,7 @@ cd ~/catkin_ws/
 catkin_make
 ````
 By default **ROS_WORK_SPACE_PATH** is ~/catkin_ws and **PX4_Firmware_PATH** is ~/PX4-Autopilot <br />
-If Not, Edit the path in E2ES/sim.sh script(Line 1 to 4)
+If Not, Edit the path in E2ES/load_world_YOUR_MAP.sh script(Line 1 to 4)
 ````
 export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:~/catkin_ws/src/e2es/gazebo/YOUR_MAP
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/catkin_ws/src/e2es/gazebo/YOUR_MAP/models
@@ -95,7 +96,7 @@ cd PX4_Firmware_PATH
 Run the simulator
 ````
 roscd e2es
-./load_world.sh
+./load_world_XXXX.sh
 ````
 Using keyboard to control the MAV in simulator
 ````
@@ -103,11 +104,18 @@ roslaunch e2es UAV.launch
 roslaunch e2es keyboard_ctr.launch
 ````
 
-You can use the 2D-Nav-Goal in RVIZ to publish your destination. <br />
+You can also use the 2D-Nav-Goal in RVIZ to publish your destination. <br />
+
+# Testing your algorithms
+
+Example: 
+
+VO (https://github.com/arclab-hku/SOPVO) + tracking (https://github.com/arclab-hku/ICRA2021tracking): 
+
+![example](others/vo_tracking_demo.gif)
 
 ### Acknowledgement
 This work are based on [PX4 Projcet](https://github.com/PX4/Firmware) and [realsense_gazebo_plugin](https://github.com/pal-robotics/realsense_gazebo_plugin)
-
 
 ### Maintainer
 [Shengyang Chen](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/people/researchstudent.html)(Dept.ME,PolyU): shengyang.chen@connect.polyu.hk <br />
