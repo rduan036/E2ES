@@ -76,7 +76,7 @@ git clone https://github.com/HKPolyU-UAV/E2ES.git
 ````
 Install 3rd Part Library
 ````
-cd ~/catkin_ws/src/e2es/3rdPartLib
+cd ~/catkin_ws/src/E2ES/3rdPartLib
 sudo ./install3rdPartLib.sh
 ````
 Compile
