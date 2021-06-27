@@ -237,42 +237,42 @@ int main(int argc, char **argv)
       kb_state=KB_LAND;
       cout << "kb_land";
     }
-    if (c == 'w' || c == 'W')
+    if (c == 'r' || c == 'R')
     {
       kb_state=KB_UP;
       cout << "kb_up";
     }
-    if (c == 's' || c == 'S')
+    if (c == 'f' || c == 'F')
     {
       kb_state=KB_DOWN;
       cout << "kb_down";
     }
-    if (c == 'a' || c == 'A')
+    if (c == 'q' || c == 'Q')
     {
       kb_state=KB_TURNLEFT;
       cout << "kb_turn_left";
     }
-    if (c == 'd' || c == 'D')
+    if (c == 'e' || c == 'E')
     {
       kb_state=KB_TURNRIGHT;
       cout << "kb_turn_right";
     }
-    if (c == 'y' || c == 'Y')
+    if (c == 'w' || c == 'W')
     {
       kb_state=KB_FORWARD;
       cout << "kb_forward";
     }
-    if (c == 'h' || c == 'H')
+    if (c == 's' || c == 'S')
     {
       kb_state=KB_BACKWARD;
       cout << "kb_backward";
     }
-    if (c == 'g' || c == 'G')
+    if (c == 'a' || c == 'A')
     {
       kb_state=KB_LEFT;
       cout << "kb_left";
     }
-    if (c == 'j' || c == 'J')
+    if (c == 'd' || c == 'D')
     {
       kb_state=KB_RIGHT;
       cout << "kb_right";

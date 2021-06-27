@@ -23,14 +23,9 @@ factory: <br />
 <img src="others/factory.jpg" width="600">
 <img src="others/factory_sim.png" width="600">
 
-### Demo Video
-
-<a href="https://www.youtube.com/watch?v=sKkA5f62P6g" target="_blank"><img src="https://img.youtube.com/vi/sKkA5f62P6g/0.jpg" 
-alt="cla" width="400" border="0" /></a>
-
-| manual control    | Click and fly navigation   |
-| ---------------------- | ---------------------- |
-| <img src="others/kbctr.png" width="300">  | <img src="others/sim.png" width="300">  |
+# manual control
+q: rotate left   |   w: forward    |  e: rotate right   |  r: up <br />
+a: left          |   s: backward   |  d: right          |  f: down <br />
 
 ### Usage
 Install pre-requires:
