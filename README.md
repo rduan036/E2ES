@@ -20,7 +20,6 @@ square_room: <br />
 
 factory: <br />
 
-<img src="others/factory.jpg" width="600">
 <img src="others/factory_sim.png" width="600">
 
 # manual control
