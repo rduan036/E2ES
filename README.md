@@ -114,6 +114,9 @@ Example:
 VO (https://github.com/arclab-hku/SOPVO) + tracking (https://github.com/arclab-hku/ICRA2021tracking): 
 
 ![example](others/vo_tracking_demo.gif)
+![example](others/rqt_graph.png)
+
+[![demo Video]](https://youtu.be/s2KDO2EqbNQ)
 
 ### Acknowledgement
 This work are based on [PX4 Projcet](https://github.com/PX4/Firmware) and [realsense_gazebo_plugin](https://github.com/pal-robotics/realsense_gazebo_plugin)
