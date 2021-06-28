@@ -1725,7 +1725,7 @@
       <init_from>Pallet.png</init_from>
     </image>
     <image id="PalletWrap_png">
-      <init_from>PalletWrap.png</init_from>
+      <init_from>j20.jpg</init_from>
     </image>
     <image id="Pillar_png">
       <init_from>Pillar.png</init_from>
@@ -1752,7 +1752,7 @@
       <init_from>Yellow.png</init_from>
     </image>
     <image id="RollupDoor_png">
-      <init_from>RollupDoor.png</init_from>
+      <init_from>holly.jpg</init_from>
     </image>
   </library_images>
   <library_visual_scenes>
