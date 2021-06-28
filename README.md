@@ -23,9 +23,9 @@ factory: <br />
 <img src="others/factory_sim.png" width="600">
 
 # manual control
-1: Take off      |   2: land
-Q: rotate left   |   W: forward    |  E: rotate right   |  R: up <br />
-A: left          |   S: backward   |  D: right          |  F: down <br />
+1: Take off------|---2: land <br />
+Q: rotate left---|---W: forward----|--E: rotate right--|--R: up <br />
+A: left----------|---S: backward---|--D: right---------|--F: down <br />
 
 ### Usage
 Install pre-requires:
