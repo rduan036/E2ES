@@ -99,7 +99,7 @@ Run the simulator
 roscd e2es
 ./load_world_XXXX.sh
 ````
-Using keyboard to control the MAV in simulator
+Using the keyboard to control the MAV in the simulator
 ````
 roslaunch e2es UAV.launch
 roslaunch e2es keyboard_ctr.launch
@@ -119,7 +119,7 @@ VO (https://github.com/arclab-hku/SOPVO) + tracking (https://github.com/arclab-h
 [![demo Video]](https://youtu.be/s2KDO2EqbNQ)
 
 ### Acknowledgement
-This work are based on [PX4 Projcet](https://github.com/PX4/Firmware) and [realsense_gazebo_plugin](https://github.com/pal-robotics/realsense_gazebo_plugin)
+This work is based on [PX4 Projcet](https://github.com/PX4/Firmware) and [realsense_gazebo_plugin](https://github.com/pal-robotics/realsense_gazebo_plugin)
 
 ### Maintainer
 [Shengyang Chen](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/people/researchstudent.html)(Dept.ME,PolyU): shengyang.chen@connect.polyu.hk <br />
